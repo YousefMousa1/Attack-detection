@@ -1,1 +1,50 @@
-r
+
+# 🛡️ Intrusion Detection Workshop – DDoS Attack Detection
+
+This project focuses on detecting **Distributed Denial of Service (DDoS) attacks** using supervised machine learning techniques.  
+It was developed as part of a security and intrusion detection workshop, leveraging real-world network traffic data to train and evaluate classification models.
+
+---
+
+## 📌 Overview
+DDoS attacks are a major threat to modern network infrastructure, overwhelming services with massive volumes of traffic.  
+The goal of this project is to build an **automated detection pipeline** that can distinguish between malicious and benign network flows with high accuracy.
+
+---
+
+## 📂 Dataset
+- **Source:** CSE-CIC-IDS 2018 / CIC-DDoS2019 dataset
+- **Content:** Network flow statistics extracted from packet captures (PCAP files)
+- **Features:** Includes packet size, flow duration, byte counts, window sizes, etc.
+- **Target:** Binary classification — `BENIGN` vs `ATTACK`
+
+---
+
+## ⚙️ Features & Workflow
+1. **Data Preprocessing**
+   - Handling missing values
+   - Encoding categorical features
+   - Feature scaling
+2. **Model Training**
+   - Implemented models:  
+     - Logistic Regression  
+     - K-Nearest Neighbors (KNN)  
+     - Random Forest  
+   - Train/test split with stratification
+3. **Evaluation**
+   - Accuracy, Precision, Recall, F1-score
+   - Confusion matrix for performance visualization
+
+---
+
+
+
+
+📊 Results
+Achieved >99% accuracy on balanced subsets of the dataset.
+
+Random Forest outperformed other tested algorithms in precision and recall.
+
+Visualized results with confusion matrices and classification reports.
+
+
